@@ -1,0 +1,89 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.filmItem {
+    background-color: #641fa5;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 40px;
+    list-style: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.filmItem:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.titleFilm {
+    font-size: 20px;
+    color: aliceblue;
+    max-width: 350px;
+    text-align: center;
+}
+
+.itemsLink {
+    text-decoration: none;
+}
+
+.filmImages {
+    width: 400px;
+    height: 600px;
+}
+
+.loadMore {
+    text-decoration: none;
+    width: 200px;
+    color: green;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: inherit;
+}
+
+.loadMore:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.loadMore:hover {
+    background: rgba(255, 255, 255, 0);
+}
+
+.loadMore:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+
+.buttonDiv {
+    text-align: center;
+    padding: 30px;
+}

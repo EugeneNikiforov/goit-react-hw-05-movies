@@ -1,0 +1,36 @@
+.filmItem {
+  background-color: #9e20c5;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 40px;
+  list-style: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.filmItem:hover {
+  // -webkit-transform: rotate(-10deg);
+  // -moz-transform: rotate(-10deg);
+  // -o-transform: rotate(-10deg);
+  // -ms-transform: rotate(-10deg);
+  transform: scale(1.03);
+}
+
+.titleFilm {
+  font-size: 20px;
+  color: aliceblue;
+  max-width: 400px;
+  text-align: center;
+}
+
+.itemsLink {
+  text-decoration: none;
+}
+
+.filmImages {
+  width: 400px;
+  height: 600px;
+}

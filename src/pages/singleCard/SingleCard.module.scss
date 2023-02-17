@@ -1,0 +1,32 @@
+.backgroundCard {
+    background: #f8f8f8;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.fallback {
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(88, 56, 177);
+    border-radius: 5px;
+    margin: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.fallback:hover {
+    background: rgb(255, 46, 210);
+}
+
+.title {
+    font-size: 40px;
+    color: rgb(88, 56, 177);
+}

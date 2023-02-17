@@ -1,0 +1,23 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.cast_photo {
+    width: 320px;
+    height: 450px;
+}
+
+.text {
+    color: #fff;
+}
+
+.cast_item {
+    background-color: rgb(88, 56, 177);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+}

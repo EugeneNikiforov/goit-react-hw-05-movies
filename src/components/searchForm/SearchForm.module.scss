@@ -1,0 +1,28 @@
+.container {
+  width: 200px;
+  margin: 40px 0 40px 20px;
+  position: relative;
+}
+input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  color: red;
+  border: 2px solid #324b4e;
+  background: #dcdcdc;
+  outline: none;
+  transition: 0.3s linear;
+}
+
+.search {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 4px;
+  right: -65px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}

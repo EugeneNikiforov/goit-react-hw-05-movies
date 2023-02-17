@@ -1,0 +1,37 @@
+.sliding_button {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: none;
+  background-color: rgb(88, 56, 177);
+  border-radius: 5px;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.active {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: none;
+  background-color: rgb(255, 46, 210);
+  border-radius: 5px;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navigation {
+  padding-top: 30px;
+}
