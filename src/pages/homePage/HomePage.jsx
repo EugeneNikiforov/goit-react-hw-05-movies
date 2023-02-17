@@ -15,9 +15,9 @@ export default function HomePage() {
     if (results.length === 0) {
       return toast.error("Images are over!");
     }
-    if (films.length === 0) {
-      return setFilms(results);
-    }
+    // if (films.length === 0) {
+    //   return setFilms(results);
+    // }
     setFilms((prevState) => [...prevState, ...results]);
   };
     setLoading(true);

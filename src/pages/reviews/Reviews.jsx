@@ -1,14 +1,15 @@
 import { getFilmsReviwers } from "../../services/services-api";
-import { useState, useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import Loader from "../../components/loader/Loader";
 import styled from "./Reviews.module.scss";
 
 export default function Reviews() {
-  const [review, setReview] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [review, setReview] = React.useState(null);
+  const [loading, setLoading] = React.useState(false);
   const { movieId } = useParams();
-  useEffect(() => {
+
+  React.useEffect(() => {
     setLoading(true);
     getFilmsReviwers(movieId)
       .then(setReview)
@@ -16,7 +17,7 @@ export default function Reviews() {
         console.log(error);
       })
       .finally(setLoading(false));
-  }, []);
+  }, [movieId]);
   return (
     <>
       {loading && <Loader />}

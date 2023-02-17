@@ -13,17 +13,15 @@ export default function MoviesPage() {
   const [loading, setLoading] = React.useState(false);
   const [page, setPage] = React.useState(1);
   const value = location.search.slice(1);
-
+  
   React.useEffect(() => {
     const pictureMethod = ({ results }) => {
-    if (findedFilms.length === 0 && results.length === 0) {
+    if (results.length === 0) {
       return toast.error("There is no result for your reqest!");
-    } else if (results.length === 0) {
-      return toast.error("Images are over!");
-    }
-    if (findedFilms === []) {
-      return setFindedFilms(results);
-    }
+    } 
+    // if (findedFilms === []) {
+    //   return setFindedFilms(results);
+    // }
     setFindedFilms((prevState) => [...prevState, ...results]);
   };
     if (value) {

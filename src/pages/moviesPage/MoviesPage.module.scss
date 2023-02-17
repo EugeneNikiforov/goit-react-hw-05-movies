@@ -45,42 +45,23 @@
 .loadMore {
     text-decoration: none;
     width: 200px;
-    color: green;
+    color: #fff;
     display: inline-block;
     position: relative;
     padding: 15px 30px;
-    border: 1px solid;
-    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
-    border-image-slice: 1;
+    border: none;
+    background-color: rgb(88, 56, 177);
+    border-radius: 5px;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     overflow: hidden;
     letter-spacing: 2px;
     transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-    background-color: inherit;
-}
 
-.loadMore:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 0;
-    width: 100%;
-    z-index: -1;
-    color: white;
-    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
-    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .loadMore:hover {
-    background: rgba(255, 255, 255, 0);
-}
-
-.loadMore:hover:before {
-    bottom: 0%;
-    top: auto;
-    height: 100%;
+    background: rgb(255, 46, 210);
 }
 
 .buttonDiv {

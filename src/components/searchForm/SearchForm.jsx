@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
+
 import toast from "react-hot-toast";
 import { ImSearch } from "react-icons/im";
 import PropTypes from "prop-types";
@@ -7,6 +7,7 @@ import styled from "./SearchForm.module.scss";
 
 export default function SearchForm({ newSearch, newPage }) {
   const [searchParams, setSearchParams] = useSearchParams();
+  console.log(searchParams);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,12 +19,11 @@ export default function SearchForm({ newSearch, newPage }) {
     setSearchParams({
       query: movieValue,
     });
-  };
-
-  useEffect(() => {
     newSearch([]);
     newPage(1);
-  }, [searchParams]);
+  };
+
+  
 
   return (
     <div>
